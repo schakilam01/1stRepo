@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    background-color: #50D2F3;
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}   
+
+.coinslabel {
+   padding: 10px;
+   margin: 1px;
+}
+
+.click-image {
+    width: 200px;
+    height: 200px;
+    transition:transform 0.5s;
+}
+
+.click-image:hover {
+    transform:scale(1.1);
+    transition:transform 0.5s;
+}
+
+.click-image:active{
+    transform:scale(1.05);
+    transition:transform 0.2s;
+}
