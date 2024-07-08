@@ -1,6 +1,6 @@
 body {
     display: flex;
-    background-color: #50D2F3;
+    background-color:  #3cd052;
     font-size: 20pt;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     justify-content: center;
@@ -29,4 +29,22 @@ body {
 .click-image:active{
     transform:scale(1.05);
     transition:transform 0.2s;
+}
+
+.upgrades {
+   margin-top: 25px; 
+}
+
+.upgradebutton {
+    font-size: 20pt;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    color: white;
+    border-radius: 12px;
+    padding: 10px;
+    transition:transform 0.5s;
+}
+
+.upgradebutton:hover {
+    transform:scale(1.1)
 }
