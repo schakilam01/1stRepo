@@ -3,6 +3,7 @@ const coinslabel = document.getElementById("coinslabel")
 const Machine = document.getElementById("Machine")
 const SuperMachine = document.getElementById("SuperMachine")
 const RogerFederer = document.getElementById("RogerFederer")
+const NojakDjokovic = document.getElementById("NojakDjokovic")
 
 let tennisballs = 0
 
@@ -13,6 +14,8 @@ let machinecost = 25
 let supermachinecost = 100
 
 let RogerFederercost = 50
+
+let NojakDjokoviccost = 250
 
 let tennisballspersecond = 0
 
@@ -46,7 +49,16 @@ RogerFederer.addEventListener("click", () => {
         RogerFederercost = Math.ceil(RogerFederercost*1.1)
         RogerFederer.innerText = "Roger Federer ($" + RogerFederercost + ")"
     }
+})
 
+NojakDjokovic.addEventListener("click", () => {
+    if(tennisballs >= NojakDjokoviccost) {
+        tennisballspersecond+=10
+        tennisballs-= NojakDjokoviccost
+        NojakDjokovic.innerText = "Tennis Balls: " + tennisballs
+        NojakDjokoviccost = Math.ceil(RogerFederercost*1.1)
+        NojakDjokovic.innerText = "Nojak Djokovic ($" + NojakDjokoviccost + ")"
+    }
 })
 
 CoinClicker.addEventListener("click", () => {
